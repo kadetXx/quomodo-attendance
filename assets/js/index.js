@@ -1,9 +1,11 @@
 document.querySelectorAll('input').forEach(input => {
-  input.addEventListener('native.showkeyboard', () => {
+  
+  input.addEventListener('focus', function() {
     document.querySelector('.mobile_logo').style.display = 'none';
   });
 
-  input.addEventListener('native.hidekeyboard', () => {
+  input.addEventListener('focusout', () => {
     document.querySelector('.mobile_logo').style.display = 'flex';
   })
+
 })
