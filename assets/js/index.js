@@ -1,4 +1,4 @@
-document.querySelectorAll('inupt').forEach(input => {
+document.querySelectorAll('input').forEach(input => {
   input.addEventListener('native.showkeyboard', () => {
     document.querySelector('.mobile_logo').style.display = 'none';
   });
